@@ -20,12 +20,12 @@ knowledge_base = WebsiteKnowledgeBase(
     vector_db=vector_db
 )
 
-knowledge_base.load(recreate=False)
-
 agent = Agent(
     model=Ollama(id="llama3.1"),
     knowledge=knowledge_base,
     markdown=True,
 )
+
+agent.knowledge.load(recreate=True)
 
 agent.print_response("Summarize the contents of the knowledge base in a single paragraph.")

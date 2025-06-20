@@ -176,11 +176,11 @@ else:
 
 # Footer
 st.divider()
-st.markdown(
-    """
-<div style='text-align: center; color: #666;'>
-    Built with ❤️ using Agno and Streamlit
-</div>
-""",
-    unsafe_allow_html=True,
-)
+# st.markdown(
+#     """
+# <div style='text-align: center; color: #666;'>
+#     Built with ❤️ using Agno and Streamlit
+# </div>
+# """,
+#     unsafe_allow_html=True,
+# )

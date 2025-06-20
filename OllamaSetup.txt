@@ -1,0 +1,4 @@
+Run the following commands:
+
+ollama pull llama3.1
+ollama pull openhermes

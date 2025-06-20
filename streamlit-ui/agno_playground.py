@@ -13,14 +13,14 @@ dotenv.load_dotenv("../.env")
 
 # Page configuration
 st.set_page_config(
-    page_title="Agno Knowledge Base Playground", page_icon="🤖", layout="wide"
+    page_title="SF GURU", page_icon="🤖", layout="wide"
 )
 
 # Title and description
-st.title("🤖 Agno Knowledge Base Playground")
+st.title("SF GURU")
 st.markdown(
     """
-This playground allows you to create an AI agent with knowledge from any website. 
+SF GURU (Generate Understanding from Resource URLs) allows you to create an AI agent with knowledge from any website. 
 Simply input a URL, and the agent will learn from that website's content!
 """
 )

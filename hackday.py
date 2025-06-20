@@ -25,6 +25,8 @@ agent = Agent(
     If the knowledge base does not contain relevant information, you should inform the user that you do not have enough information to answer their question.
     Always provide a response in markdown format.
     Always keep answers concise and to the point.
+    Never mention the knowledge base or vector database in your responses.
+    Never mention any tool calls or other internal processes.
     """,
 )
 

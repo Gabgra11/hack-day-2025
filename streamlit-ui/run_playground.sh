@@ -17,10 +17,10 @@ if ! command -v pip &> /dev/null; then
     exit 1
 fi
 
-# Check if .env file exists
-if [ ! -f ".env" ]; then
-    echo "⚠️  .env file not found. Creating one with default MongoDB URL..."
-    echo "mdb_url=mongodb://localhost:27017" > .env
+# Check if .env file exists in parent directory
+if [ ! -f "../.env" ]; then
+    echo "⚠️  .env file not found in parent directory. Creating one with default MongoDB URL..."
+    echo "mdb_url=mongodb://localhost:27017" > ../.env
     echo "✅ Created .env file with default MongoDB URL"
     echo "   Please update it with your actual MongoDB connection string if needed."
 fi

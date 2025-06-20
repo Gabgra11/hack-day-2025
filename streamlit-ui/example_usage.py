@@ -25,8 +25,8 @@ def create_agent_with_knowledge(url, model_id="llama3.1", max_links=10, collecti
         Agent: Configured Agno agent
     """
     
-    # Load environment variables
-    dotenv.load_dotenv()
+    # Load environment variables from parent directory
+    dotenv.load_dotenv("../.env")
     
     # Initialize vector database
     vector_db = MongoDb(

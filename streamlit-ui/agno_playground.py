@@ -8,8 +8,8 @@ import dotenv
 import os
 import time
 
-# Load environment variables
-dotenv.load_dotenv()
+# Load environment variables from parent directory
+dotenv.load_dotenv("../.env")
 
 # Page configuration
 st.set_page_config(
